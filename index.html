@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'/>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css'/>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <title>Search Suggest</title>
+    <link rel="stylesheet" href="./suggest.css">
+    <script src="./suggest-list.js" async></script>
+    <script src="./suggest.js" defer></script>
+    <meta name="author" content="Lester Howard">
+    <meta name="description" content="When press a key, some suggestions will be displayed">
+</head>
+<body>
+    <div class="container">
+        <div class="container__paragraph">
+            Search words starting by "What" and "How". They are provided from array
+        </div>
+        
+        <div class="suggestions">
+            <div class="suggestions__top">
+                <input type="text" class="suggestions__input" placeholder="Type to search...">
+                <a class="suggestions__icon fas fa-search" href="https://www.linkedin.com/in/lesthoward/" target="_blank"></a>
+            </div>
+            <div class="suggestions__bottom">
+                <ul class="suggestions__autocomplete">
+                    <!-- Loaded with JavaScript -->
+                    <!-- <li class="suggestions__item">How to learn JavaScipt</li>
+                    <li class="suggestions__item">How to learn PHP</li>
+                    <li class="suggestions__item">How to learn NodeJS</li>
+                    <li class="suggestions__item">How to learn MongoDB</li>
+                    <li class="suggestions__item">How to learn Python</li>
+                    <li class="suggestions__item">How to learn Java</li> -->
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
